@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 13:19:27 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/11/14 14:54:13 by paulo-do         ###   ########.fr       */
+/*   Updated: 2023/11/14 14:57:20 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,60 +39,60 @@ int	ft_printf(const char *input, ...)
 	return (j);
 }
 
- int main (void)
- {
- 	//int c;
- 	//c = 123456789;
- 	//s = "o pato";
- //	ft_printf("%%someth%cing isn't wrong with %s but we never know how
-//ab%cout we call the cops to find out? %c\n",c ,s,c, c);
-// //	printf("%%something isn't wrong with %s but we never know how about
-//we call the cops to find out? %c\n", s, c);
- //	ft_printf("%i\n", c);
- //	printf("%i\n", c);
-
- //	ft_printf("%d\n", c);
- 	//const char *s;
-
-	int i = 0;
- 	const char *d;
- 	const char *w;
- 	const char *f;
- 	const char *g;
- 	const char *h;
- 	const char *j;
- 	const char *k;
- 	const char *l;
- 	const char *p;
- 	const char *o;
- 	const char *y;
- 	const char *t;
- 	const char *e;
-
- 	d ="⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀⡀";
- 	w = "⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀";
- 	f = "⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆";
- 	g = "⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆";
- 	h = "⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆";
- 	j = "⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠸⣼⡿";
- 	k = "⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉";
- 	l = "⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇";
- 	p = "⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇";
- 	o = "⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇";
- 	y = "⠀⠀ ⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠇";
- 	t = "⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇";
- 	e = "⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃";
-	 int qwe = 0;
-	 int wqet = 0;
-	 while(i++ < 30)
-	 {
-		 qwe += ft_printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d, w, f, g, h, j, k, l, p, o, y, t, e);
-		 wqet += printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d, w, f, g, h, j, k, l, p, o, y, t, e);
-	 }
-printf("meu: %d\n, not meu: %d", qwe, wqet);
- 	//printf("%d\n", c);
-
-// unsigned int uuu = 00010001;
-// 	ft_printf("%u\n",uuu);
-// 	printf("%u\n",uuu);
- }
+// int main (void)
+// {
+// 	//int c;
+// 	//c = 123456789;
+// 	//s = "o pato";
+// //	ft_printf("%%someth%cing isn't wrong with %s but we never know how
+////ab%cout we call the cops to find out? %c\n",c ,s,c, c);
+//// //	printf("%%something isn't wrong with %s but we never know how about
+////we call the cops to find out? %c\n", s, c);
+// //	ft_printf("%i\n", c);
+// //	printf("%i\n", c);
+//
+// //	ft_printf("%d\n", c);
+// 	//const char *s;
+//
+//	int i = 0;
+// 	const char *d;
+// 	const char *w;
+// 	const char *f;
+// 	const char *g;
+// 	const char *h;
+// 	const char *j;
+// 	const char *k;
+// 	const char *l;
+// 	const char *p;
+// 	const char *o;
+// 	const char *y;
+// 	const char *t;
+// 	const char *e;
+//
+// 	d ="⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀⡀";
+// 	w = "⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀";
+// 	f = "⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆";
+// 	g = "⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆";
+// 	h = "⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆";
+// 	j = "⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠸⣼⡿";
+// 	k = "⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉";
+// 	l = "⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇";
+// 	p = "⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇";
+// 	o = "⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇";
+// 	y = "⠀⠀ ⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠇";
+// 	t = "⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇";
+// 	e = "⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃";
+//	 int qwe = 0;
+//	 int wqet = 0;
+//	 while(i++ < 30)
+//	 {
+//		 qwe += ft_printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d, w, f, g, h, j, k, l, p, o, y, t, e);
+//		 wqet += printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d, w, f, g, h, j, k, l, p, o, y, t, e);
+//	 }
+//printf("meu: %d\n, not meu: %d", qwe, wqet);
+// 	//printf("%d\n", c);
+//
+//// unsigned int uuu = 00010001;
+//// 	ft_printf("%u\n",uuu);
+//// 	printf("%u\n",uuu);
+// }
