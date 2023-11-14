@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 09:42:57 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/11/13 14:56:21 by paulo-do         ###   ########.fr       */
+/*   Updated: 2023/11/14 08:37:06 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ int	ft_findmytype(int type, va_list lst)
 		return (ft_putstr_fd(va_arg(lst, char *), 1));
 	else if ('p' == type)
 		return (ft_print_ptr(va_arg(lst, unsigned long int)));
-	else if ('d' == type)
-		return (ft_print_decimal(va_arg(lst, int )));
-	else if ('i' == type)
+	else if ('d' == type || 'i' == type)
 		return (ft_print_decimal(va_arg(lst, int )));
 	else if ('u' == type)
 		return (ft_print_unsigned(va_arg(lst, unsigned int)));

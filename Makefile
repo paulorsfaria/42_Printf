@@ -18,8 +18,6 @@ SRCS = 	ft_printf.c ft_findmytype.c ft_printf_utils.c ft_itoa.c\
 		ft_print_decimal.c ft_itoa_unsigned.c ft_print_unsigned.c\
 		ft_print_hexadecimal.c ft_print_ptr.c
 
-
-
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)

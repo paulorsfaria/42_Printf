@@ -15,7 +15,7 @@
 int	ft_print_decimal(int nbr)
 {
 	char	*temp;
-	size_t	size;
+	int		size;
 
 	if (!nbr)
 		return (write(1, "0", 1));

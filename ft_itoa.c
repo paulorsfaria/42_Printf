@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-static long int	count_numbers(int n)
+static int	count_numbers(int n)
 {
 	int	counter;
 

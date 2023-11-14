@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_print_unsigned(unsigned int nbr)
+unsigned long	ft_print_unsigned(unsigned int nbr)
 {
 	char	*temp;
 	size_t	size;

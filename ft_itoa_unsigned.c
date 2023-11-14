@@ -12,21 +12,6 @@
 
 #include "ft_printf.h"
 
-static long int	count_numbers(unsigned int n)
-{
-	int	counter;
-
-	counter = 0;
-	if (n == 0)
-		return (1);
-	while (n != 0)
-	{
-		counter++;
-		n = n / 10;
-	}
-	return (counter);
-}
-
 static char	*if_zero(char *str)
 {
 	str[0] = '0';
@@ -40,7 +25,7 @@ char	*ft_itoa_unsigned(unsigned int n)
 	long unsigned int	nb;
 
 	nb = n;
-	size = count_numbers(n);
+	size = len_nbr(n, 10);
 	if (!size)
 		return (NULL);
 	number = (char *) malloc(sizeof (char) * (size + 1));
