@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 13:19:27 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/11/15 12:08:32 by paulo-do         ###   ########.fr       */
+/*   Updated: 2023/11/15 12:17:46 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,16 @@ int	ft_printf(const char *format, ...)
 	return (j);
 }
 
- int main (void)
- {
-	int totalft = 0;
-	int totalprint = 0;
-	 totalprint = printf("%%d: %d, %%i: %i, "
-	 "%%u: %u, %%c: %c, %%s: %s, %%%%: %%\n",
-			10, 20, 30, 'A', "Hello");
-	 totalft = ft_printf("%%d: %d, %%i: %i, "
-	 "%%u: %u, %%c: %c, %%s: %s, %%%%: %%\n",
-			 10, 20, 30, 'A', "Hello");
-	 printf("ft_printf: %d\nprintf: %d\n", totalft, totalprint);
-
- }
+// int main (void)
+// {
+//	int totalft = 0;
+//	int totalprint = 0;
+//	 totalprint = printf("%%d: %d, %%i: %i, "
+//	 "%%u: %u, %%c: %c, %%s: %s, %%%%: %%\n",
+//			10, 20, 30, 'A', "Hello");
+//	 totalft = ft_printf("%%d: %d, %%i: %i, "
+//	 "%%u: %u, %%c: %c, %%s: %s, %%%%: %%\n",
+//			 10, 20, 30, 'A', "Hello");
+//	 printf("ft_printf: %d\nprintf: %d\n", totalft, totalprint);
+//
+// }
