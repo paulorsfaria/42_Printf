@@ -6,93 +6,47 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 13:19:27 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/11/14 14:57:20 by paulo-do         ###   ########.fr       */
+/*   Updated: 2023/11/15 12:08:32 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf(const char *input, ...)
+int	ft_printf(const char *format, ...)
 {
 	int		i;
 	int		j;
-	va_list	not_sure;
+	va_list	lst;
 
-	va_start(not_sure, input);
+	va_start(lst, format);
 	i = 0;
 	j = 0;
-	while (input[i] != '\0')
+	while (format[i] != '\0')
 	{
-		if (input[i] == '%')
+		if (format[i] == '%')
 		{
 			i++;
-			if (input[i] != '\0')
-			{
-				j += ft_findmytype(input[i], not_sure);
-			}
+			if (format[i] != '\0')
+				j += ft_findmytype(format[i], lst);
 		}
 		else
-			j += ft_putchar_fd(input[i], 1);
+			j += ft_putchar_fd(format[i], 1);
 		i++;
 	}
-	va_end(not_sure);
+	va_end(lst);
 	return (j);
 }
 
-// int main (void)
-// {
-// 	//int c;
-// 	//c = 123456789;
-// 	//s = "o pato";
-// //	ft_printf("%%someth%cing isn't wrong with %s but we never know how
-////ab%cout we call the cops to find out? %c\n",c ,s,c, c);
-//// //	printf("%%something isn't wrong with %s but we never know how about
-////we call the cops to find out? %c\n", s, c);
-// //	ft_printf("%i\n", c);
-// //	printf("%i\n", c);
-//
-// //	ft_printf("%d\n", c);
-// 	//const char *s;
-//
-//	int i = 0;
-// 	const char *d;
-// 	const char *w;
-// 	const char *f;
-// 	const char *g;
-// 	const char *h;
-// 	const char *j;
-// 	const char *k;
-// 	const char *l;
-// 	const char *p;
-// 	const char *o;
-// 	const char *y;
-// 	const char *t;
-// 	const char *e;
-//
-// 	d ="⡴⠑⡄⠀⠀⠀⠀⠀⠀⠀ ⣀⣀⣤⣤⣤⣀⡀";
-// 	w = "⠸⡇⠀⠿⡀⠀⠀⠀⣀⡴⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀";
-// 	f = "⠀⠀⠀⠀⠑⢄⣠⠾⠁⣀⣄⡈⠙⣿⣿⣿⣿⣿⣿⣿⣿⣆";
-// 	g = "⠀⠀⠀⠀⢀⡀⠁⠀⠀⠈⠙⠛⠂⠈⣿⣿⣿⣿⣿⠿⡿⢿⣆";
-// 	h = "⠀⠀⠀⢀⡾⣁⣀⠀⠴⠂⠙⣗⡀⠀⢻⣿⣿⠭⢤⣴⣦⣤⣹⠀⠀⠀⢀⢴⣶⣆";
-// 	j = "⠀⠀⢀⣾⣿⣿⣿⣷⣮⣽⣾⣿⣥⣴⣿⣿⡿⢂⠔⢚⡿⢿⣿⣦⣴⣾⠸⣼⡿";
-// 	k = "⠀⢀⡞⠁⠙⠻⠿⠟⠉⠀⠛⢹⣿⣿⣿⣿⣿⣌⢤⣼⣿⣾⣿⡟⠉";
-// 	l = "⠀⣾⣷⣶⠇⠀⠀⣤⣄⣀⡀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇";
-// 	p = "⠀⠉⠈⠉⠀⠀⢦⡈⢻⣿⣿⣿⣶⣶⣶⣶⣤⣽⡹⣿⣿⣿⣿⡇";
-// 	o = "⠀⠀⠀⠀⠀⠀⠀⠉⠲⣽⡻⢿⣿⣿⣿⣿⣿⣿⣷⣜⣿⣿⣿⡇";
-// 	y = "⠀⠀ ⠀⠀⠀⠀⠀⢸⣿⣿⣷⣶⣮⣭⣽⣿⣿⣿⣿⣿⣿⣿⠇";
-// 	t = "⠀⠀⠀⠀⠀⠀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇";
-// 	e = "⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃";
-//	 int qwe = 0;
-//	 int wqet = 0;
-//	 while(i++ < 30)
-//	 {
-//		 qwe += ft_printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d, w, f, g, h, j, k, l, p, o, y, t, e);
-//		 wqet += printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", d, w, f, g, h, j, k, l, p, o, y, t, e);
-//	 }
-//printf("meu: %d\n, not meu: %d", qwe, wqet);
-// 	//printf("%d\n", c);
-//
-//// unsigned int uuu = 00010001;
-//// 	ft_printf("%u\n",uuu);
-//// 	printf("%u\n",uuu);
-// }
+ int main (void)
+ {
+	int totalft = 0;
+	int totalprint = 0;
+	 totalprint = printf("%%d: %d, %%i: %i, "
+	 "%%u: %u, %%c: %c, %%s: %s, %%%%: %%\n",
+			10, 20, 30, 'A', "Hello");
+	 totalft = ft_printf("%%d: %d, %%i: %i, "
+	 "%%u: %u, %%c: %c, %%s: %s, %%%%: %%\n",
+			 10, 20, 30, 'A', "Hello");
+	 printf("ft_printf: %d\nprintf: %d\n", totalft, totalprint);
+
+ }

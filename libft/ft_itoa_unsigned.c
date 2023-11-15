@@ -6,11 +6,11 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:27:48 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/11/13 14:52:39 by paulo-do         ###   ########.fr       */
+/*   Updated: 2023/11/15 08:09:50 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 static char	*if_zero(char *str)
 {

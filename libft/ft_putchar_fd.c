@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_unsigned.c                                :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paulo-do <paulo-do@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/13 12:25:44 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/11/13 15:01:42 by paulo-do         ###   ########.fr       */
+/*   Created: 2023/11/15 12:01:02 by paulo-do          #+#    #+#             */
+/*   Updated: 2023/11/15 12:01:02 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-int	ft_print_unsigned(unsigned int nbr)
+int	ft_putchar_fd(char c, int fd)
 {
-	char	*temp;
-	int		size;
-
-	if (!nbr)
-		return (write(1, "0", 1));
-	temp = ft_itoa_unsigned(nbr);
-	ft_putstr_fd(temp, 1);
-	size = ft_strlen(temp);
-	free(temp);
-	return (size);
+	return (write(fd, &c, 1));
 }
